@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import school.cesar.Controller.BtnClickedPrintHelloWorld;
+import school.cesar.Controller.SelectFileController;
 
 public class Data {
 	
@@ -34,7 +34,7 @@ public class Data {
 		
 		// Instanciando as streams diretamente no bloco try
 		try(BufferedReader br = new BufferedReader(
-				new FileReader(BtnClickedPrintHelloWorld.getPath()))) {
+				new FileReader(SelectFileController.getPath()))) {
 			
 			String line = br.readLine();
 			
