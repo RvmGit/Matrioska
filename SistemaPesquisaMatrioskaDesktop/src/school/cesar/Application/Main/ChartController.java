@@ -34,8 +34,8 @@ public class ChartController extends Application {
 	    // Pichart 1 - CURSO
 	    ObservableList<PieChart.Data> pieChartData1 =
 	            FXCollections.observableArrayList(
-	            new PieChart.Data("Ciência da Computação", 88),
-	            new PieChart.Data("Design", 101));
+	            new PieChart.Data("Ciência da Computação", 22),
+	            new PieChart.Data("Design", 24));
 	            
 	    
 	    final PieChart pieChart1 = new PieChart(pieChartData1);
@@ -70,9 +70,9 @@ public class ChartController extends Application {
 	 // Pichart 2 - PERIODO
 	    ObservableList<PieChart.Data> pieChartData2 =
 	            FXCollections.observableArrayList(
-	            new PieChart.Data("1º", 102),
-	            new PieChart.Data("2º", 55),
-	            new PieChart.Data("3º", 32));
+	            new PieChart.Data("1º", 24),
+	            new PieChart.Data("2º", 10),
+	            new PieChart.Data("3º", 12));
 	    
 	   	    
 	    final PieChart pieChart2 = new PieChart(pieChartData2);
@@ -108,7 +108,7 @@ public class ChartController extends Application {
 	    CategoryAxis xAxis = new CategoryAxis();
 	    xAxis.setLabel("Valores");
  
-	    NumberAxis yAxis = new NumberAxis(0, 30, 1);
+	    NumberAxis yAxis = new NumberAxis(0, 50, 1);
 	    yAxis.setLabel("Quantidade de Pessoas");
  
 	    // Create a BarChart
@@ -118,11 +118,11 @@ public class ChartController extends Application {
 	    XYChart.Series<String, Number> dataSeries = new XYChart.Series<String, Number>();
 	    dataSeries.setName("2014");
  
-	    dataSeries.getData().add(new XYChart.Data<String, Number>("1", 20));
-	    dataSeries.getData().add(new XYChart.Data<String, Number>("2", 4));
-	    dataSeries.getData().add(new XYChart.Data<String, Number>("3", 2));
-	    dataSeries.getData().add(new XYChart.Data<String, Number>("4", 4));
-	    dataSeries.getData().add(new XYChart.Data<String, Number>("5", 2));
+	    dataSeries.getData().add(new XYChart.Data<String, Number>("1", 0));
+	    dataSeries.getData().add(new XYChart.Data<String, Number>("2", 2));
+	    dataSeries.getData().add(new XYChart.Data<String, Number>("3", 8));
+	    dataSeries.getData().add(new XYChart.Data<String, Number>("4", 27));
+	    dataSeries.getData().add(new XYChart.Data<String, Number>("5", 9));
  
  
 	    // Add Series to BarChart.
