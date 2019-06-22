@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#223240</color>
+    <color name="colorAccent">#3AACA6</color>
+    <color name="buttonColorSubmit">#F7BE00</color>
+    <!--<color name="colorBackground1">#0972AB</color>-->
+    <!--<color name="colorBackground2">#ABC1CF</color>-->
+    <!--<color name="colorBackground3">#AEC5D6</color>-->
+    <!--<color name="colorBackground4">#223240</color>-->
+    <!--<color name="colorBackground5">#101D29</color>-->
+
+</resources>

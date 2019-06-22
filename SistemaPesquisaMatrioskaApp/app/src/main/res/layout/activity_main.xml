@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".MainActivity">
+
+    <!--1) Qual a sua idade? (Múltipla escolha)-->
+    <!--2) De onde você é? (Múltipla escolha)-->
+    <!--3) Como você descreveria sua experiência no carnaval de Olinda? (Aberta)-->
+    <!--4) Que nota você daria a sua experiência no carnaval de Olinda? (Nota 0-5)-->
+    <!--5) Em uma palavra, como você descreveria o carnaval de Olinda? (Palavra)-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/pergunta1CardView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="3dp"
+            app:contentPadding="4dp"
+            app:cardBackgroundColor="#FFFFFF">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:orientation="horizontal"
+                android:clickable="true">
+
+
+                <TextView
+                    android:id="@+id/txtPergunta1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Qual a sua idade ?"
+                    android:textSize="30sp"
+                    android:layout_margin="5dp"
+                    />
+
+                <EditText
+                    android:id="@+id/valorCapturadoPergunta1"
+                    android:layout_below="@+id/txtPergunta1"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:verticalScrollbarPosition="left"
+                    android:textSize="20sp"
+                    android:maxLength="2"
+                    android:focusable="true"
+                    android:inputType="number"
+                    />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/pergunta2CardView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="3dp"
+            app:contentPadding="4dp"
+            app:cardBackgroundColor="#FFFFFF">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+
+                <TextView
+                    android:id="@+id/txtPergunta2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="De onde você é ?"
+                    android:textSize="30sp"
+                    android:layout_margin="5dp"/>
+
+                <Spinner
+                    android:id="@+id/valorCapturadoPergunta2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="70dp"
+                    android:layout_below="@+id/txtPergunta2"/>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!--dakhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh-->
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/pergunta3CardView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="3dp"
+            app:contentPadding="4dp"
+            app:cardBackgroundColor="#FFFFFF">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+
+                <TextView
+                    android:id="@+id/txtPergunta3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Como você descreveria sua experiência no carnaval de Olinda?"
+                    android:textSize="30sp"
+                    android:layout_margin="5dp"
+                    />
+
+                <Button
+                    android:id="@+id/valorCapturadoPergunta3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtPergunta3"
+                    android:text="Gravar áudio"
+                    />
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtValorTranscritoPergunta3"
+                    android:layout_below="@+id/valorCapturadoPergunta3"
+                    android:text=""
+                    android:layout_centerInParent="true"
+                    android:textSize="25sp"
+                    />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!--dakhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh-->
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/pergunta4CardView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="3dp"
+            app:contentPadding="4dp"
+            app:cardBackgroundColor="#FFFFFF">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+
+                <TextView
+                    android:id="@+id/txtPergunta4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Que nota você daria a sua experiência no carnaval de Olinda ?"
+                    android:textSize="30sp"
+                    android:layout_margin="5dp"
+                    />
+
+                <RadioGroup
+                    android:id="@+id/valorCapturadoPergunta4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/txtPergunta4"
+                    >
+
+                    <RadioButton
+                        android:id="@+id/radioNota1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+
+                        />
+
+                    <RadioButton
+                        android:id="@+id/radioNota2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="2"
+                        android:textSize="20sp"
+
+                        android:layout_weight="1"
+
+                        />
+
+                    <RadioButton
+                        android:id="@+id/radioNota3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="3"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+
+                        />
+
+
+                    <RadioButton
+                        android:id="@+id/radioNota4"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="4"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+
+                        />
+
+
+                    <RadioButton
+                        android:id="@+id/radioNota5"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="5"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+
+                        />
+
+                </RadioGroup>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/pergunta5CardView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="3dp"
+            app:contentPadding="4dp"
+            app:cardBackgroundColor="#FFFFFF">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+
+                <TextView
+                    android:id="@+id/txtPergunta5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Em uma palavra, como você descreveria o carnaval de Olinda ?"
+                    android:textSize="30sp"
+                    android:layout_margin="5dp"
+                    />
+
+                <Button
+                    android:id="@+id/valorCapturadoPergunta5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtPergunta5"
+                    android:text="Gravar áudio"
+                    />
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtValorTranscritoPergunta5"
+                    android:layout_below="@+id/valorCapturadoPergunta5"
+                    android:text=""
+                    android:layout_centerInParent="true"
+                    android:textSize="25sp"
+                    />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnEnviarInfo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:textSize="25sp"
+                android:background="@color/buttonColorSubmit"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>
+
+
+
+
